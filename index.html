@@ -79,8 +79,8 @@
         }
 
         @keyframes flash {
-            0% { opacity: 0.5; transform: scaleX(-1) scale(1.1); }
-            100% { opacity: 1; transform: scaleX(-1) scale(1.1); }
+            0% { opacity: 0.5; transform: scale(-1,1) scale(1.1); }
+            100% { opacity: 1; transform: scale(-1,1) scale(1.1); }
         }
         #score-container {
             display: flex;
@@ -96,8 +96,8 @@
             color: #27ae60; /* Green color for the high score record */
         }
         #game-container {
-            width: 600px;
-            height: 250px; 
+            width: 95%;
+            max-width: 600px; 
             border-bottom: 4px solid #333;
             position: relative;
             background-color: #fff;
@@ -116,7 +116,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            transform: scaleX(-1);
+            transform: scale(-1,1);
         }
         /* Red Obstacle */
         #obstacle {
